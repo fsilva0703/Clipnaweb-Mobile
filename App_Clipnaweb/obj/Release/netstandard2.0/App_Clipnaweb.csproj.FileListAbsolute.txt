@@ -1,0 +1,17 @@
+C:\Users\Fabio Silva\Source\Repos\App_Clipnaweb\App_Clipnaweb\bin\Release\netstandard2.0\App_Clipnaweb.deps.json
+C:\Users\Fabio Silva\Source\Repos\App_Clipnaweb\App_Clipnaweb\bin\Release\netstandard2.0\App_Clipnaweb.dll
+C:\Users\Fabio Silva\Source\Repos\App_Clipnaweb\App_Clipnaweb\bin\Release\netstandard2.0\ref\App_Clipnaweb.dll
+C:\Users\Fabio Silva\Source\Repos\App_Clipnaweb\App_Clipnaweb\bin\Release\netstandard2.0\App_Clipnaweb.pdb
+C:\Users\Fabio Silva\Source\Repos\App_Clipnaweb\App_Clipnaweb\obj\Release\netstandard2.0\App_Clipnaweb.csprojAssemblyReference.cache
+C:\Users\Fabio Silva\Source\Repos\App_Clipnaweb\App_Clipnaweb\obj\Release\netstandard2.0\App.xaml.g.cs
+C:\Users\Fabio Silva\Source\Repos\App_Clipnaweb\App_Clipnaweb\obj\Release\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Fabio Silva\Source\Repos\App_Clipnaweb\App_Clipnaweb\obj\Release\netstandard2.0\Views\pages\FiltroTodas.xaml.g.cs
+C:\Users\Fabio Silva\Source\Repos\App_Clipnaweb\App_Clipnaweb\obj\Release\netstandard2.0\Views\pages\ListMaterias.xaml.g.cs
+C:\Users\Fabio Silva\Source\Repos\App_Clipnaweb\App_Clipnaweb\obj\Release\netstandard2.0\Views\pages\Login.xaml.g.cs
+C:\Users\Fabio Silva\Source\Repos\App_Clipnaweb\App_Clipnaweb\obj\Release\netstandard2.0\App_Clipnaweb.csproj.CoreCompileInputs.cache
+C:\Users\Fabio Silva\Source\Repos\App_Clipnaweb\App_Clipnaweb\obj\Release\netstandard2.0\App_Clipnaweb.AssemblyInfoInputs.cache
+C:\Users\Fabio Silva\Source\Repos\App_Clipnaweb\App_Clipnaweb\obj\Release\netstandard2.0\App_Clipnaweb.AssemblyInfo.cs
+C:\Users\Fabio Silva\Source\Repos\App_Clipnaweb\App_Clipnaweb\obj\Release\netstandard2.0\XamlC.stamp
+C:\Users\Fabio Silva\Source\Repos\App_Clipnaweb\App_Clipnaweb\obj\Release\netstandard2.0\App_Clipnaweb.dll
+C:\Users\Fabio Silva\Source\Repos\App_Clipnaweb\App_Clipnaweb\obj\Release\netstandard2.0\ref\App_Clipnaweb.dll
+C:\Users\Fabio Silva\Source\Repos\App_Clipnaweb\App_Clipnaweb\obj\Release\netstandard2.0\App_Clipnaweb.pdb

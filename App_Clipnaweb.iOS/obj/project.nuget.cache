@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "4zL8rsGWlzeRF4wLIYsgs0dF7e0NzzDGZVYi1gvX2IfqRJ6rqaMOznbziruc03Uh9fd5iWXKzwOaEDkZSKSCpQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Fabio Silva\\Source\\Repos\\App_Clipnaweb\\App_Clipnaweb.iOS\\App_Clipnaweb.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Fabio Silva\\.nuget\\packages\\exiflib.pcl\\1.0.2-pre01\\exiflib.pcl.1.0.2-pre01.nupkg.sha512",
+    "C:\\Users\\Fabio Silva\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Fabio Silva\\.nuget\\packages\\xamarin.essentials\\1.5.1\\xamarin.essentials.1.5.1.nupkg.sha512",
+    "C:\\Users\\Fabio Silva\\.nuget\\packages\\xamarin.forms\\4.6.0.379-pre1\\xamarin.forms.4.6.0.379-pre1.nupkg.sha512",
+    "C:\\Users\\Fabio Silva\\.nuget\\packages\\xlabs.core\\2.3.0-pre05\\xlabs.core.2.3.0-pre05.nupkg.sha512",
+    "C:\\Users\\Fabio Silva\\.nuget\\packages\\xlabs.forms\\2.3.0-pre05\\xlabs.forms.2.3.0-pre05.nupkg.sha512",
+    "C:\\Users\\Fabio Silva\\.nuget\\packages\\xlabs.ioc\\2.3.0-pre05\\xlabs.ioc.2.3.0-pre05.nupkg.sha512",
+    "C:\\Users\\Fabio Silva\\.nuget\\packages\\xlabs.platform\\2.3.0-pre05\\xlabs.platform.2.3.0-pre05.nupkg.sha512",
+    "C:\\Users\\Fabio Silva\\.nuget\\packages\\xlabs.serialization\\2.3.0-pre05\\xlabs.serialization.2.3.0-pre05.nupkg.sha512"
+  ],
+  "logs": []
+}

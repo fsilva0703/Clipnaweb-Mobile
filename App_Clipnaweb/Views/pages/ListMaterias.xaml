@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App_Clipnaweb.Views.pages.ListMaterias"
+             NavigationPage.HasBackButton="True"
+             Title="Refine sua busca - Clipnaweb"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+
+            <StackLayout Margin="0">
+                <Image x:Name="imgLogoCliente" WidthRequest="50" HeightRequest="50"></Image>
+            </StackLayout>
+
+            <StackLayout Margin="0">
+                <Label x:Name="lblClipping" Font="15" TextColor="Black" FontAttributes="Bold" HorizontalTextAlignment="Center"></Label>
+                <Label x:Name="lblDataPesquisa" Font="12" TextColor="Black" FontAttributes="Bold" HorizontalTextAlignment="Center"></Label>
+            </StackLayout>
+
+            <ActivityIndicator x:Name="waitActivityIndicator"
+                                       HorizontalOptions="CenterAndExpand"
+                                       VerticalOptions="CenterAndExpand"
+                                       Color="Green" IsVisible="False">
+            </ActivityIndicator>
+
+            <StackLayout IsVisible="False" x:Name="noNews" Margin="0" Padding="40">
+                <Label Text="Nenhuma matéria encontrada na pesquisa realizada." TextColor="Black" FontAttributes="Bold" Font="20" HorizontalOptions="Center"></Label>
+            </StackLayout>
+
+
+            <ListView x:Name="lvMaterias" SeparatorColor="Black" SeparatorVisibility="Default" RowHeight="100" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="{Binding urlFile}" HorizontalOptions="Start" HeightRequest="60" WidthRequest="60" />
+                                <StackLayout Orientation="Vertical" Padding="10,5,5,10" HorizontalOptions="Start">
+                                    <Label Text = "{Binding titulo}" TextColor="Blue" TextDecorations="Underline" Font="15" FontAttributes="Bold" HorizontalTextAlignment="Start" TextType="Html">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer CommandParameter="{Binding urlMateria}" Tapped="OnTappedTitulo"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                    <Label Text = "{Binding data}" HorizontalTextAlignment="Start" />
+                                    <Label Text = "{Binding veiculo}" HorizontalTextAlignment="Start" FontAttributes="Bold" />
+                                    <Label Text = "{Binding subtitulo}" Font="12" HorizontalTextAlignment="Start" MaxLines="3" />
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

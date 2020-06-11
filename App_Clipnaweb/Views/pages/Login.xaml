@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App_Clipnaweb.Views.pages.Login"
+             NavigationPage.HasBackButton="True"
+             Title="Login - Clipnaweb"
+             BackgroundColor="Black">
+    
+    <Frame CornerRadius="20" 
+           HorizontalOptions="CenterAndExpand" 
+           VerticalOptions="Start"
+           HasShadow="True"
+           IsClippedToBounds="True"
+           OutlineColor="Green" 
+           Padding="50">
+
+        <StackLayout Spacing="10" HorizontalOptions="CenterAndExpand">
+            <StackLayout Margin="20">
+                <Image Source="logologin.png"/>
+            </StackLayout>
+
+            <StackLayout Margin="10">
+                <Label Text="Clipnaweb Mobile"
+                           Font="20"
+                           HorizontalOptions="Center"
+                           FontAttributes="Bold" >
+                </Label>
+                <Label Text="Digite o seu login e senha para Acessar" Font="12" FontFamily="Tahoma" VerticalTextAlignment="Start" HorizontalTextAlignment="Center">
+                </Label>
+            </StackLayout>
+
+            <Frame  CornerRadius="5" 
+                    HasShadow="True"
+                    IsClippedToBounds="True"
+                    OutlineColor="Gray" 
+                    Padding="0,5,5,5"
+                     WidthRequest="300">
+            <Entry x:Name="txtLogin"
+                           Placeholder="Entre com seu login"
+                           FontSize="Small"
+                           Keyboard="Email"
+                           VerticalOptions="Center"
+                           HorizontalOptions="FillAndExpand">
+            </Entry>
+            </Frame>
+
+            <Frame  CornerRadius="5" 
+                    HorizontalOptions="Center" 
+                    VerticalOptions="Start"
+                    HasShadow="True"
+                    IsClippedToBounds="True"
+                    OutlineColor="Gray" 
+                    Padding="0,5,5,5"
+                     WidthRequest="300">
+                <Entry x:Name="txtSenha"
+                           Placeholder="Entre com sua senha"
+                           FontSize="Small"
+                           IsPassword="True"
+                           VerticalOptions="Center"
+                            HorizontalOptions="FillAndExpand">
+                </Entry>
+            </Frame>
+
+            <StackLayout Orientation="Horizontal">
+
+                <Label Text="Lembrar-me" Font="18"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Center">
+                </Label>
+                <Switch x:Name="lembrarmeSwitch"
+                             HorizontalOptions="End"
+                             VerticalOptions="Center" Toggled="OnToggled">
+                </Switch>
+
+            </StackLayout>
+
+            <ActivityIndicator x:Name="waitActivityIndicator"
+                                       HorizontalOptions="CenterAndExpand"
+                                       VerticalOptions="CenterAndExpand"
+                               Color="Green">
+            </ActivityIndicator>
+
+            <Frame  CornerRadius="30" 
+                    HasShadow="True"
+                    IsClippedToBounds="True"
+                    OutlineColor="Gray" 
+                    Padding="0,0,0,0"
+                     WidthRequest="300" HorizontalOptions="CenterAndExpand">
+
+                <Button x:Name="loginButton"
+                        BackgroundColor="Green"
+                        Text="Entrar"
+                        TextColor="White"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center">
+                </Button>
+            </Frame>
+
+
+        </StackLayout>
+
+
+    </Frame>
+</ContentPage>

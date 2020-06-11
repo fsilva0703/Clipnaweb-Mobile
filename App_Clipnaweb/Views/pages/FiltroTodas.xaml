@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             mc:Ignorable="d"
+             x:Class="App_Clipnaweb.Views.pages.FiltroTodas"
+             NavigationPage.HasBackButton="True"
+             Title="Login - Clipnaweb"
+             BackgroundColor="Black">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" Padding="0,0,0,0">
+            <Image x:Name="imgLogoCliente"
+                   HorizontalOptions="CenterAndExpand"
+                   WidthRequest="180" HeightRequest="50"/>
+            <!--<Label Text="Pesquisa Avançada"
+                   HorizontalOptions="EndAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   FontAttributes="Bold"
+                   FontSize="20" TextColor="White"/>-->
+            <!--<Image Source="company_logo"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="End" />-->
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <ScrollView HorizontalOptions="StartAndExpand" Margin="0">
+            <Frame CornerRadius="20" 
+           HorizontalOptions="StartAndExpand" 
+           VerticalOptions="Start"
+           HasShadow="True"
+           IsClippedToBounds="True"
+           OutlineColor="Green" 
+           Padding="50,50,50,50">
+                <StackLayout Margin="0">
+                    <Label Text=" Assunto de Interesse:"
+                   Font="15" 
+                   FontAttributes="Bold" >
+                    </Label>
+                    <Picker x:Name="pckAssunto" FontSize="Small" HorizontalOptions="FillAndExpand" Title="Clique para selecionar o assunto:" TextColor="Black">
+                    </Picker>
+
+                    <StackLayout Orientation="Vertical" Spacing="10">
+                        <Label Text=" Mídias:"
+                   Font="15" 
+                   FontAttributes="Bold" >
+                        </Label>
+                        <controls:CheckBox x:Name="chkJr" IsVisible="False" DefaultText="Jornais e Revistas" FontSize="12"/>
+                        <controls:CheckBox x:Name="chkTv" IsVisible="False" DefaultText="TV" FontSize="12"/>
+                        <controls:CheckBox x:Name="chkRd" IsVisible="False" DefaultText="Rádio" FontSize="12"/>
+                        <controls:CheckBox x:Name="chkOnline" IsVisible="False" DefaultText="Internet" FontSize="12"/>
+                        <controls:CheckBox x:Name="chkInter" IsVisible="False" DefaultText="Internacional" FontSize="12"/>
+                        <controls:CheckBox x:Name="chkMSocial" IsVisible="False" DefaultText="Mídias Sociais" FontSize="12"/>
+                    </StackLayout>
+
+
+
+                    <StackLayout Orientation="Vertical" Margin="5">
+                        <Label Text=" Palavra:"
+                   Font="15" 
+                   FontAttributes="Bold" >
+                        </Label>
+                        <Entry x:Name="txtPalavra"
+                           Placeholder="Digite aqui a palavra para busca"
+                           VerticalOptions="Center"
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Black"
+                           FontSize="Small">
+                        </Entry>
+
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" Margin="0">
+
+                        <Grid VerticalOptions="CenterAndExpand" ColumnSpacing="50">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label Text=" Data de Início:" Font="15" Grid.Row="0" Grid.Column="0" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                            <DatePicker x:Name="DataIni" FontSize="Small" Grid.Row="1" Grid.Column="0" Margin="0" Format="dd/MM/yyyy" HorizontalOptions="Center" VerticalOptions="Center" DateSelected="OnDateSelectedDataIni"></DatePicker>
+
+                            <Label Text="Data de Fim:" Font="15" Grid.Row="0" Grid.Column="1" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                            <DatePicker x:Name="DataFim" FontSize="Small" Grid.Row="1" Grid.Column="1" Margin="0" Format="dd/MM/yyyy" HorizontalOptions="Center" VerticalOptions="Center" DateSelected="OnDateSelectedDataFim"></DatePicker>
+
+                        </Grid>
+
+                    </StackLayout>
+
+                    <ActivityIndicator x:Name="waitActivityIndicator"
+                                       HorizontalOptions="CenterAndExpand"
+                                       VerticalOptions="CenterAndExpand"
+                               Color="Green" IsVisible="False">
+                    </ActivityIndicator>
+
+                    <Frame  CornerRadius="30" 
+                    HasShadow="True"
+                    IsClippedToBounds="True"
+                    OutlineColor="Gray" 
+                    Padding="0,0,0,0"
+                     WidthRequest="300" HorizontalOptions="CenterAndExpand">
+                        <Button x:Name="BtnRefine"
+                        BackgroundColor="Green"
+                        Text="Pesquisar"
+                        TextColor="White"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center">
+                        </Button>
+                    </Frame>
+
+                </StackLayout>
+
+
+            </Frame>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
